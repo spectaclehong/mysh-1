@@ -3,7 +3,8 @@
 
 typedef int (*built_in_command_do)(int, char**);
 typedef int (*built_in_command_validate)(int, char**);
-
+extern int PID;
+extern char running_command[1024];
 struct built_in_command
 {
   char command_name[512];
